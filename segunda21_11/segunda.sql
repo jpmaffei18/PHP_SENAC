@@ -1,0 +1,1 @@
+UPDATE times set id=1 where nome_do_time="Vasco";
