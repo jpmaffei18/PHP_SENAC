@@ -1,0 +1,24 @@
+select nome, peso from pet
+where especie = 'cachorro' and sexo ='F';
+
+
+select nome, tutor, especie from pet
+where especie = 'cachorro' or especie = 'calopsita' or especie = 'tartaruga';
+
+
+select nome, especie, dt_nascimento from pet
+where especie = 'hamster' and dt_nascimento like '2021%';
+
+select nome, especie, dt_nascimento from pet
+where especie = 'gato' and month(dt_nascimento) >= '07';
+
+select nome, especie, peso from pet
+where especie = 'cobra'
+order by peso desc
+limit 1;
+
+select nome, especie from pet
+where dt_morte is null;
+
+select nome, especie from pet
+where tutor is null;
