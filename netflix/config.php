@@ -7,7 +7,7 @@ if($conexao->connect_errno)
     echo "Tem alguma coisa errada";
 }
 else {
-    echo "Conexão bem sucedida";
+    echo " ";
 }
 
 ?>

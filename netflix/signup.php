@@ -1,5 +1,14 @@
 <?php
+if(isset($_POST['submit'])) {
 
+    include_once('config.php');
+    
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+    
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(email, senha) values('$email', '$senha')");
+    
+    }
 ?>
 
 
@@ -53,7 +62,7 @@ position: relative;
 
 <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" style="float: left;">
 
-<a href="http://localhost:8080/senac_php/netflix/netflix.php" style="float: right; margin: 40px; text-decoration: none; color: black; font-weight:bolder; font-family:Arial, Helvetica, sans-serif"> Entrar</a>
+<a href="http://localhost:8080/senac_php3/netflix/netflix.php" style="float: right; margin: 40px; text-decoration: none; color: black; font-weight:bolder; font-family:Arial, Helvetica, sans-serif"> Entrar</a>
 
 <div class="form" >
 
@@ -81,6 +90,8 @@ position: relative;
         }
         </script>
 
-        <input type="submit" name="submit" id="submit" class="submit" style="background-color: red; color: white; width: 345px; height: 45px; border-radius:2px; border:solid 1px black; margin-bottom: 5px; margin-left: 50px; font-weight:900; font-size: 15px; " value="CONTINUAR"/>
-</body>
-</html>
+        <a href="http://localhost:8080/senac_php3/netflix/perfis.php">
+        <input type="submit" name="submit" id="submit" class="submit" style="background-color: red; color: white; width: 345px; height: 45px; border-radius:2px; border:solid 1px black; margin-bottom: 5px; margin-left: 50px; font-weight:900; font-size: 15px;" value="CONTINUAR">
+        </a>
+        </body>
+        </html>

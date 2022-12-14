@@ -1,15 +1,6 @@
 <?php
 
-if(isset($_POST['submit'])) {
 
-    include_once('config.php');
-    
-    $email = $_POST['email'];
-    $senha = $_POST['senha'];
-    
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(email, senha) values('$email', '$senha')");
-    
-    }
 ?>
 
 
@@ -28,7 +19,7 @@ if(isset($_POST['submit'])) {
 
 body{
     padding: 0;
-    margin: 0;git 
+    margin: 0;
     height: 100vh;
     width:100% ;
     position: relative;
@@ -145,7 +136,7 @@ p{float:left;}
         
         <a href="https://www.netflix.com/br/LoginHelp" style="float: left; font-size:12px; margin-left: 90px; color:grey; text-decoration: none; margin-top: 4px;"> Precisa de ajuda?</a>
         
-        <p style="margin-left:50px; margin-top:80px;color:grey;">Novo por aqui? <a href="http://localhost:8080/senac_php/netflix/signup.php" style="color: white; text-decoration: none;">Assine agora.</a></p> 
+        <p style="margin-left:50px; margin-top:80px;color:grey;">Novo por aqui? <a href="http://localhost:8080/senac_php3/netflix/signup.php" style="color: white; text-decoration: none;">Assine agora.</a></p> 
         <p style="margin-left:50px; margin-top: 0; color:grey; font-size: 13px; float: left;">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" style="color: #0071eb; text-decoration: none;">Saiba mais.</a></p>
         
         <scri
