@@ -14,11 +14,6 @@
 
 <style>
 
-.img:hover{
-    border: 3px solid white;
-    overflow: hidden;
-}    
-
 .bg_video{
 	position: fixed; 
 	right: 0; 
@@ -171,7 +166,7 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
         <a href="#"> Minha Lista </a>
     </li>
     <a href="http://localhost:8080/senac_php3/netflix/perfis.php">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e70b1333850498.56ba69ac32ae3.png" style="width: 30px; float: right; margin-right: 40px;">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/64623a33850498.56ba69ac2a6f7.png" style="width: 30px; float: right; margin-right: 40px;">
     </a>
     <img src="https://www.udop.com.br/u_img/buscar/lupa.png" style="width: 30px; float: right; margin-right: 20px; ">
     

@@ -14,10 +14,10 @@
 
 <style>
 
-.img:hover{
-    border: 3px solid white;
-    overflow: hidden;
-}    
+.filmes img:hover{
+border: solid 2px white;
+overflow: hidden;
+}
 
 .bg_video{
 	position: fixed; 
@@ -117,6 +117,7 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
     padding-left: 40px;
 }
 
+
 .filmes p{
     font-weight:bolder;
     font-size: 30px;
@@ -171,7 +172,7 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
         <a href="#"> Minha Lista </a>
     </li>
     <a href="http://localhost:8080/senac_php3/netflix/perfis.php">
-    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/e70b1333850498.56ba69ac32ae3.png" style="width: 30px; float: right; margin-right: 40px;">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb3a8833850498.56ba69ac33f26.png" style="width: 30px; float: right; margin-right: 40px;">
     </a>
     <img src="https://www.udop.com.br/u_img/buscar/lupa.png" style="width: 30px; float: right; margin-right: 20px; ">
     
@@ -214,14 +215,16 @@ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubunt
 
         <p>Minha Lista</p>
         <tr>
+ 
           <td></td>
-          <td><img src="https://occ-0-1380-420.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfVQiCs1xLey22l0WpgHklv7ryIOVjv1bD3hbaBajbtDMil7sncUP64v0VEIdWH7GR_H_wlBYBSkarvr18FYDgKwClaVsyPZsj_FuaEMpWPV76wvQjQIIQi9kQuFzryfftunycyWboKrGA67H3sxvbx-g8cjhOukVb3Zi2qqiKS4O-Py_zjWI03s7PvDZ1k.jpg?r=411" style="border: solid 1px white"></td>
+          <td><img src="https://occ-0-1380-420.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfVQiCs1xLey22l0WpgHklv7ryIOVjv1bD3hbaBajbtDMil7sncUP64v0VEIdWH7GR_H_wlBYBSkarvr18FYDgKwClaVsyPZsj_FuaEMpWPV76wvQjQIIQi9kQuFzryfftunycyWboKrGA67H3sxvbx-g8cjhOukVb3Zi2qqiKS4O-Py_zjWI03s7PvDZ1k.jpg?r=411"></td>
           <td><img src="http://occ-0-1380-420.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABX38NJilA97jkd-IDa_TXBt7RKdrhpyaLta0AhPHg73Na3C0aDpTq0s8nHhv33El6H7-VqKyZSnIEF6K3ERFsUIH6Sol6-ueqA0Gfvjwj8LYzxixWHIxvmDMbNgdGR176KZF.jpg?r=282"></td>
           <td><img src="love.jpeg"></td>
           <td><img src="pre-playGlassOnio.jpeg" alt="pre-playGlassOnio"></td>
           <td><img src="arcane (2).jpeg"></td>
           <td><img src="round6.jpeg"></td>
-          
+
+
         </tr>
 </div>
         

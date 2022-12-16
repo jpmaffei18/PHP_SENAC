@@ -8,10 +8,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix</title>
+    <link href="https://i.pinimg.com/originals/0f/66/dc/0f66dc3fe8ea994a70ed78472b2aa50f.png" rel="icon">
 </head>
 
 <style>
+
+div img:hover {
+    border: 3px solid white;
+    overflow: hidden;
+}
+
 .body{
 background-color: #141414;
 color: white;
@@ -89,25 +96,34 @@ margin-top:8px;
 </div>
 
 
-<div class="perfil2">   
+<div class="perfil2">
+    <a href="http://localhost:8080/senac_php3/netflix/inicio2.php">   
     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/84c20033850498.56ba69ac290ea.png">
+    </a>
     <h3> Henric </h3>
 </div>
 
 <div class="perfil2">   
+<a href="http://localhost:8080/senac_php3/netflix/inicio3.php">
     <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/64623a33850498.56ba69ac2a6f7.png">
+    </a>
     <h3> Rychard </h3>
 </div>
 
 
 <div class="perfil2">
-<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/bf6e4a33850498.56ba69ac3064f.png">
-<h3> Brayan </h3>
+    <a href="http://localhost:8080/senac_php3/netflix/inicio4.php">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/bf6e4a33850498.56ba69ac3064f.png">
+    </a>
+    <h3> Brayan </h3>
 </div>
 
 <div class="perfil2">
-<img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb3a8833850498.56ba69ac33f26.png">
-<h3> Abner </h3>
+
+    <a href="http://localhost:8080/senac_php3/netflix/inicio5.php">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/bb3a8833850498.56ba69ac33f26.png">
+    </a>
+    <h3> Abner </h3>
 </div>
 
 
