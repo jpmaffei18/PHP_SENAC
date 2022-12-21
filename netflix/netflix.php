@@ -11,7 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix</title>
-    <link href="https://i.pinimg.com/originals/0f/66/dc/0f66dc3fe8ea994a70ed78472b2aa50f.png" rel="icon"> 
+    <link href="https://i.pinimg.com/originals/0f/66/dc/0f66dc3fe8ea994a70ed78472b2aa50f.png" rel="icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
 </head>
 
 
@@ -41,14 +44,21 @@ left: 0;
 right: 0;
 }
 
+.form-control {
+
+    border-bottom-right-radius: none;
+    border-top-right-radius: none;
+}
+
 .form{
-    height: 550px;
+    height: 570px;
     width: 400px;
     background-color: rgba(0,0,0,.75);
     border-radius:5px;
     margin-left: 50%;
     margin-top:0;
     padding: 30px;
+    padding-left:10px;
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 
     'Open Sans', 'Helvetica Neue', sans-serif;
     color: white;
@@ -106,15 +116,30 @@ p{float:left;}
 <div class="form">
 <h1>Entrar</h1>
     <form method="POST">
-        <input type="email" name="email" id="email" class="email"placeholder="Email ou número de telefone" style="width: 283px; height: 45px; border: none; border-radius:5px; margin-bottom: 10px; margin-left: 50px; background-color: #333333; padding-left: 20px;  color: white; font-size: 15px;" required/>
+        <input type="email" name="email" id="email" class="email"placeholder="Email ou número de telefone" style="width: 311px; height: 45px; border: none; border-radius:5px; margin-bottom: 10px; margin-left: 50px; background-color: #333333; padding-left: 20px;  color: white; font-size: 15px;" required/>
         <br/>
-        <input type="password" name="senha" id="senha" class="senha" placeholder="Senha" style=" width: 283px; height: 45px; border: none; border-radius:5px; background-color: #333333; color: white; padding-left: 20px; margin-bottom: 5px;margin-left: 50px; font-size: 15px;" required/>
         
-        <br/>
-        <button type="button" onclick="mostrarSenha()" style="width: auto; font-size:10px;margin-top: 0; margin-left: 52px; margin-bottom: 40px;"> MOSTRAR</button>
+      <div class="input-group">
+
+  <input type="password" name="password" id="password" class="form-control" data-toggle="password" placeholder="Senha" style="width: 200px; height: 45px; border: none; border-radius:5px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; background-color: #333333; color: white; padding-left: 20px; margin-bottom: 5px;margin-left: 50px; font-size: 15px;" required/>
+
+  <div class="input-group-append" >
+
+    <span class="input-group-text" style=" background-color: #333333; border: none; width: 40px; height: 45px;">
+
+      <i  class="fa fa-eye" onclick="mostrarSenha()" style="color: white;"></i>
+
+    </span>
+
+  </div>
+
+</div>
+
+
+
         <script>
         function mostrarSenha(){
-        var tipo = document.getElementById("senha")
+        var tipo = document.getElementById("password")
         if(tipo.type == "password"){
             tipo.type ="text";
         }
@@ -126,9 +151,11 @@ p{float:left;}
         <br/>
         
         
-        <input type="submit" name="submit" id="submit" class="submit" style="background-color: red; color: white; width: 305px; height: 45px; border-radius:5px; border:solid 1px black; margin-bottom: 5px; margin-left: 50px; font-weight:900; font-size: 15px; " value="Entrar"/>
-        <br/>
+        <input type="submit" name="submit" id="submit" class="submit" onclick="location.href='perfis.php'" style="background-color: red; color: white; width: 311px; height: 45px; border-radius:5px; border:solid 1px black; margin-bottom: 5px; margin-left: 50px; font-weight:900; font-size: 15px; " value="Entrar"/>
+        
 
+
+        <br/>
         <div class="box">
         <input type="checkbox" style="opacity: 0.8" value="lembre-se de mim" style="margin-left: 10px; background-color:grey;"/> 
         <label for="lembre-se de mim" style="font-size: 12px; color:grey;">Lembre-se de mim</label>
@@ -136,13 +163,18 @@ p{float:left;}
         
         <a href="https://www.netflix.com/br/LoginHelp" style="float: left; font-size:12px; margin-left: 90px; color:grey; text-decoration: none; margin-top: 4px;"> Precisa de ajuda?</a>
         
-        <p style="margin-left:50px; margin-top:80px;color:grey;">Novo por aqui? <a href="http://localhost:8080/senac_php3/netflix/signup.php" style="color: white; text-decoration: none;">Assine agora.</a></p> 
+        <p style="margin-left:50px; margin-top:80px;color:grey;">Novo por aqui? <a href="http://localhost:8080/senac_php3/netflix/home.php" style="color: white; text-decoration: none;">Assine agora.</a></p> 
         <p style="margin-left:50px; margin-top: 0; color:grey; font-size: 13px; float: left;">Esta página é protegida pelo Google reCAPTCHA para garantir que você não é um robô. <a href="#" style="color: #0071eb; text-decoration: none;">Saiba mais.</a></p>
         
-        <scri
     </form>
 
 </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script  src="/path/to/bootstrap-show-password.js"></script>
+
+
 
 </body>
 </html>

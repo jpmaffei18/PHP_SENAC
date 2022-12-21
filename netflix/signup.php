@@ -90,8 +90,15 @@ position: relative;
         }
         </script>
 
-        <a href="http://localhost:8080/senac_php3/netflix/perfis.php">
-        <input type="submit" name="submit" id="submit" class="submit" style="background-color: red; color: white; width: 345px; height: 45px; border-radius:2px; border:solid 1px black; margin-bottom: 5px; margin-left: 50px; font-weight:900; font-size: 15px;" value="CONTINUAR">
+        
+        <input type="submit" onclick="location.href='perfis.php'" name="submit" id="submit" class="submit" style="background-color: red; color: white; width: 345px; height: 45px; border-radius:2px; border:solid 1px black; margin-bottom: 5px; margin-left: 50px; font-weight:900; font-size: 15px;" value="CONTINUAR">
+        
+        
+ 
+            
+        
+
+
         </a>
         </body>
         </html>
